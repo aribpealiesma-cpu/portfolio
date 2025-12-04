@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   background-color: #f5f7fa;
   /* imagen de fondo: ocupa toda la pantalla */
-  background-image: url('IMAGENES/17973908.jpg');
+  background-image: url('./IMAGENES/17973908.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;        /* ocupa toda la pantalla */
