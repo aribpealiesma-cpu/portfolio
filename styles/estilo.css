@@ -1,15 +1,21 @@
-h1 { color: blue; }
+h1 { 
+  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
 
 body {
   margin: 0;
   min-height: 100vh;
   background-color: #f5f7fa;
-  /* imagen de fondo: ocupa toda la pantalla */
-  background-image: url('./IMAGENES/17973908.jpg');
+  background-image: url('../IMAGENES/17973908.jpg');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;        /* ocupa toda la pantalla */
-  background-attachment: fixed;  /* fija la imagen al hacer scroll */
+  background-size: cover;
+  background-attachment: fixed;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   color: #222;
 }
@@ -32,15 +38,21 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  background: rgba(255,255,255,0.45); /* menos opaco */
+  background: rgba(255,255,255,0.45);
   backdrop-filter: blur(4px);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Grid principal: dos columnas 50% / 50% */
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Grid principal: una columna */
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 24px;
   padding: 24px 32px;
   align-items: start;
@@ -48,31 +60,32 @@ body {
   overflow: auto;
 }
 
-/* About (izquierda) */
+/* About (contenedor principal) */
 .about {
-  background: rgba(255,255,255,0.65); /* más transparente para dejar ver el fondo */
+  background-color: rgba(255,255,255,0.65);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  height: calc(100% - 0px);
+  font-size: 18px;
 }
 
-/* Actividades (derecha) */
-.activities {
-  background: rgba(255,255,255,0.65); /* más transparente para dejar ver el fondo */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-  height: calc(100% - 0px);
+.about h2 {
+  font-size: 28px;
 }
 
-/* Footer: abajo a la derecha */
-.site-footer {
-  padding: 12px 32px;
-  background: transparent;
-  justify-self: end;  /* coloca el footer a la derecha */
-  align-self: end;    /* coloca en la fila inferior */
-  color: #222;
+.about h3 {
+  font-size: 22px;
+}
+
+.about h4 {
+  font-size: 20px;
+}
+
+.content-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
 
 /* Ajustes de navegación simple */
@@ -88,4 +101,9 @@ body {
   padding: 6px 10px;
   border-radius: 6px;
   background: rgba(0,0,0,0.04);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #222;
 }
