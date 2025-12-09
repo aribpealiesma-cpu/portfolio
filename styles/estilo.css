@@ -20,8 +20,7 @@ body {
   color: #222;
 }
 
-/* Main container: 3 filas (top / contenido / footer) y ocupa toda la pantalla */
-.main-container {
+ {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
@@ -31,7 +30,7 @@ body {
   padding: 0; /* el padding lo manejamos dentro de las áreas */
 }
 
-/* Zona superior (nav + título) */
+
 .site-top {
   padding: 30px 40px;
   display: flex;
@@ -49,7 +48,7 @@ body {
   object-fit: contain;
 }
 
-/* Grid principal: una columna */
+
 .content-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -60,7 +59,7 @@ body {
   overflow: auto;
 }
 
-/* About (contenedor principal) */
+
 .about {
   background-color: rgba(255,255,255,0.65);
   padding: 20px;
@@ -88,7 +87,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* Ajustes de navegación simple */
+
 .top-nav ul {
   list-style: none;
   display: flex;
