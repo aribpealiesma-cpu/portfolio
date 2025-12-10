@@ -106,3 +106,24 @@ body {
   text-decoration: none;
   color: #222;
 }
+
+
+.site-footer {
+  padding: 12px 32px;
+  background: rgba(255,255,255,0.35);
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin-top: 16px;
+}
+
+.site-footer .contact {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.site-footer a {
+  color: #222;
+  text-decoration: none;
+  margin: 0 8px;
+}
