@@ -28,21 +28,20 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 0; 
-  padding: 20px 32px;
-  background: rgba(255,255,255,0.4);
-  text-align: center;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  margin-top: 20px;
+}
+
+
+.site-top {
+  padding: 30px 40px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
   background: rgba(255,255,255,0.45);
   backdrop-filter: blur(4px);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-top: 10px;
-  font-size: 20px;
-  line-height: 1.4;
+}
+
 .logo {
   width: 100px;
   height: 100px;
@@ -50,21 +49,15 @@ body {
 }
 
 
-  color: #222;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 600;
-  font-size: 18px;
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 24px;
   padding: 24px 32px;
   align-items: start;
-  text-decoration: underline;
   box-sizing: border-box;
   overflow: auto;
 }
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 20px;
 
 
 .about {
