@@ -27,7 +27,7 @@ body {
   gap: 16px;
   width: 100%;
   box-sizing: border-box;
-  padding: 0; /* el padding lo manejamos dentro de las áreas */
+  padding: 0; 
 }
 
 
